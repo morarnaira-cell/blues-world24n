@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blue</title>
+</head>
+
+<body style="margin:0;">
+
+  <!-- ================= START ================= -->
+  <div id="start" style="
+    position: fixed;
+    inset: 0;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: block;
+  ">
+
+    <h1 style="
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 72px;
+      color: black;
+      text-align: center;
+      text-shadow: 0 3px 10px rgba(255,255,255,0.7);
+      margin: 0;
+      font-family: Georgia, serif;
+    ">
+      Welcome to <i>Blue’s</i> world
+    </h1>
+
+    <button onclick="
+      document.getElementById('start').style.display='none';
+      document.getElementById('inside').style.display='block';
+    "
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 14px 32px;
+      font-size: 18px;
+      background: black;
+      color: white;
+      border: 1px solid white;
+      border-radius: 30px;
+      cursor: pointer;
+    ">
+      Enter Blue’s World
+    </button>
+
+  </div>
+
+  <!-- ================= INSIDE ================= -->
+  <div id="inside" style="
+    position: fixed;
+    inset: 0;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: none;
+  ">
+
+    <div style="
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    "></div>
+
+    <div style="
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      color: white;
+      padding: 0 8vw;
+      font-family: Georgia, serif;
+    ">
+
+      <h1 style="margin:0;font-size:64px;">
+        You stepped inside.
+      </h1>
+
+      <p style="max-width:600px;font-size:18px;line-height:1.7;margin:0;">
+        We write to taste life twice...
+      </p>
+
+      <button onclick="
+        document.getElementById('inside').style.display='none';
+        document.getElementById('third').style.display='block';
+      "
+      style="
+        padding: 14px 32px;
+        border-radius: 30px;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+      ">
+        Go deeper
+      </button>
+
+      <button onclick="
+        document.getElementById('inside').style.display='none';
+        document.getElementById('start').style.display='block';
+      "
+      style="
+        margin-top: 10px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      ">
+        ← Back
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ================= THIRD ================= -->
+  <div id="third" style="
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 20, 45, 0.98);
+    display: none;
+  ">
+
+    <div style="
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      color: white;
+      padding: 0 8vw;
+      font-family: Georgia, serif;
+    ">
+
+      <h1 style="margin:0;font-size:64px;">
+        Deeper into Blue’s world
+      </h1>
+
+      <p style="max-width:600px;font-size:18px;line-height:1.7;margin:0;opacity:0.9;">
+        Bitter or sweet, that's up to you...
+      </p>
+
+      <button onclick="
+        document.getElementById('third').style.display='none';
+        document.getElementById('final').style.display='block';
+      "
+      style="
+        padding: 14px 32px;
+        border-radius: 30px;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+      ">
+        Read poems
+      </button>
+
+      <button onclick="
+        document.getElementById('third').style.display='none';
+        document.getElementById('inside').style.display='block';
+      "
+      style="
+        margin-top: 10px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      ">
+        ← Back
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ================= FINAL (POEMS) ================= -->
+  <div id="final" style="
+    position: up;
+    inset: 0;
+    background: #0f0f14;
+    display: none;
+    overflow-y: auto;
+  ">
+
+    <div style="
+      min-height: 100vh;
+      padding: 80px 10vw;
+      color: white;
+      font-family: Georgia, serif;
+    ">
+
+      <h1 style="
+        text-align: center;
+        font-size: 64px;
+        margin: 0 0 60px 0;
+      ">
+        Blue’s poems
+      </h1>
+
+      <!-- POEM 1 -->
+      <div style="
+        margin-bottom: 60px;
+        padding: 30px;
+        border-left: 3px solid rgba(255,255,255,0.4);
+      ">
+        <h2 style="margin-top:0;">Send me back to where i came from</h2>
+        <p style="line-height:1.7;margin:0;">
+          
+ I no longer fit into this body, I’m too full of what it was,
+no room left for becoming, only echoes of because.
+
+
+
+
+         Send me back to where i came from,
+Before my name took place on earth,
+Send back my tears, give the clouds the taste of hurt.
+
+
+
+
+I was a breathe between two stars,
+Before I got to have my own,
+And now I’m cursed to have a heart,
+But have no clue where it belongs. 
+
+
+
+
+I was never meant to stay, I was only passing through,
+So let my grief become the haze,
+And make of me a softer view.
+        </p>
+      </div>
+
+      <!-- POEM 2 -->
+      <div style="
+        margin-bottom: 60px;
+        padding: 30px;
+        border-left: 3px solid rgba(255,255,255,0.4);
+      ">
+        <h2 style="margin-top:0;">Sunt</h2>
+        <p style="line-height:1.7;margin:0;">
+         
+
+Ei spun că ochii țin ce brațele nu pot,
+Că nu se vede-afară focul care arde-n tot,
+Și dacă lacrimile-ar curge-n mii de culori,
+Am fi doar trupuri pictate-n tristeți și fiori.
+
+Privim în larg, dar nu găsim ieșire,
+Ne lovim de umbre ce par a fi solide,
+Nu ne deschidem glasul, nu riscăm să fim văzuți,
+De parcă frica-i scopul pentru care-am fost făcuți.
+
+Pleoapele ni se închid în timp ce sufletul se zbate,
+Încercăm să luminăm amintiri ce-au fost blurate,
+Ne agățăm de trecut ca de-un vis care dispare,
+Sperând că-n urma lui se va deschide și o cale.
+        </p>
+      </div>
+
+      <!-- POEM 3 -->
+      <div style="
+        margin-bottom: 80px;
+        padding: 30px;
+        border-left: 3px solid rgba(255,255,255,0.4);
+      ">
+        <h2 style="margin-top:0;">Departe</h2>
+        <p style="line-height:1.7;margin:0;">
+        
+
+Azi-noapte te-am zărit,  în umbră stăteai, aproape,
+Și gerul se lăsa domol pe umedele-ți pleoape.
+Un murmur ți-a plutit pe buzele-ți violete,
+Ca glasul unei lumi pierdute-n somnul iernii incomplete. 
+
+Te-aș fi chemat din nou, din neguri să revii,
+Dar numai visul, trist, mi te aduce-n zori târzii.
+
+Se stinge încet farul ce mă purta spre al tău cânt,
+Acum tot mai departe, mai departe de pământ,
+Mai lasă-mă o dată să te pot privi de-aproape,
+Coboară-te la mine, ca luceafărul în noapte.
+
+Nu vreau nimic mai mult decât un zâmbet, 
+Nimic decât a ta chemare,
+Dacă nu pot să-ți fiu dorul….voi fi doar o scriitoare. 
+        </p>
+      </div>
+
+      <div style="text-align:center;">
+        <button onclick="
+          document.getElementById('final').style.display='none';
+          document.getElementById('start').style.display='block';
+        "
+        style="
+          padding: 12px 28px;
+          border-radius: 30px;
+          border: 1px solid white;
+          background: transparent;
+          color: white;
+          cursor: pointer;
+        ">
+          ← Back to beginning
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+<style>
+    body{
+      background-image: url("image.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+</body>
+</html>
